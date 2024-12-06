@@ -230,6 +230,8 @@ class _MainScreenState extends State<MainScreen> {
               ),
               moviesList('Release in the Past Year', 0),
               moviesList('Continue Watching for Sarwat', 6),
+              moviesList('My List', 12),
+              moviesList('Selected for You Today', 6),
             ],
           ),
         ),
