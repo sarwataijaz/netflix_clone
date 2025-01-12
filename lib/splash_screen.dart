@@ -1,10 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:netflix_clone/ready_to_watch.dart';
-import 'package:netflix_clone/whos_watching_screen.dart';
+import 'package:netflix_clone/get_started.dart';
 import 'package:page_transition/page_transition.dart';
-import 'main_menu.dart';
 
 
 class SplashScreen extends StatefulWidget {
@@ -29,9 +26,9 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         Navigator.pushReplacement( // replaces current route with new route
           context,
           PageTransition(
-            type: PageTransitionType.leftToRight,
-            duration: Duration(milliseconds: 1000),
-            child: ReadyToWatch(),
+            type: PageTransitionType.rightToLeft,
+            duration: Duration(milliseconds: 800),
+            child: GetStarted(),
           ),
         );
       }
